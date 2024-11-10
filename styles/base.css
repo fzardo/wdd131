@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap");
+
+:root {
+    --primary-color: #004a99;
+    --secondary-color: #000000;
+    --tertiary-color: #FFFFFF;
+    --quaternary-color: #333333;
+    --font-family: "Spline Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template: auto auto 1fr / 1fr;
+    min-height: 100vh;
+    width: 1024px;
+    font-family: var(--font-family);
+    margin: auto;
+    background-color: var(--primary-color);
+}
+
+header {
+    color: var(--tertiary-color);
+}
+
+header h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    padding: 20px;
+    gap: 1em;
+}
+
+.card {
+    background-color: #e4e4e4;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card div {
+    display: flex;
+    grid-column: 2;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
