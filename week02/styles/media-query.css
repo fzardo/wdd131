@@ -1,0 +1,23 @@
+body {
+    font-family: "Spline Sans", sans-serif;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border-style: outset;
+    border-color:rgb(238, 238, 238);
+    background-color: rgb(200, 228, 255);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: rgb(244, 250, 255);
+}
