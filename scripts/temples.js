@@ -11,28 +11,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('navMenu');
 
     function handleMenuDisplay() {
-        // Check if the screen width is at least 640px
+        // Check if the screen width is 640px or greater
         if (window.innerWidth >= 640) {
             // Display the menu with flex layout when the screen is wide enough
             navMenu.style.display = 'flex';
             hamburger.style.display = 'none'; // Hide the hamburger button
         } else {
             // Show hamburger menu when the screen is smaller than 640px
-            navMenu.style.display = 'none';
+            navMenu.style.display = 'none'; // Hide the nav menu initially
             hamburger.style.display = 'block'; // Show the hamburger button
 
-            // Add hover event listener to hamburger button
+            // Add hover event listener to hamburger button for showing the nav menu
             hamburger.addEventListener('mouseenter', function() {
-                // When hovered, show the nav menu
-                navMenu.style.display = 'block';
-                hamburger.innerHTML = '&#10006;'; // Change to 'X' symbol
+                navMenu.style.display = 'block'; // Show nav menu
             });
 
-            // Remove hover event listener when mouse leaves
+            // Hide nav menu when mouse leaves the hamburger button
             hamburger.addEventListener('mouseleave', function() {
-                // When hover ends, hide the nav menu
-                navMenu.style.display = 'none';
-                hamburger.innerHTML = '&#9776;'; // Change back to hamburger symbol
+                navMenu.style.display = 'none'; // Hide nav menu
             });
         }
     }
