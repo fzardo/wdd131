@@ -20,6 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show hamburger menu when the screen is smaller than 640px
             navMenu.style.display = 'none';
             hamburger.style.display = 'block'; // Show the hamburger button
+
+            // Add hover event listener to hamburger button
+            hamburger.addEventListener('mouseenter', function() {
+                // When hovered, show the nav menu
+                navMenu.style.display = 'block';
+                hamburger.innerHTML = '&#10006;'; // Change to 'X' symbol
+            });
+
+            // Remove hover event listener when mouse leaves
+            hamburger.addEventListener('mouseleave', function() {
+                // When hover ends, hide the nav menu
+                navMenu.style.display = 'none';
+                hamburger.innerHTML = '&#9776;'; // Change back to hamburger symbol
+            });
         }
     }
 
@@ -29,17 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener for screen resizing
     window.addEventListener('resize', handleMenuDisplay);
 
-    // Set up the event listener for the hamburger menu button
-    hamburger.addEventListener('click', function() {
-        // Check if the menu is currently visible or not
-        if (navMenu.style.display === 'none' || navMenu.style.display === '') {
-            // If it's hidden, display the menu
-            navMenu.style.display = 'block';
-            hamburger.innerHTML = '&#10006;'; // Change to 'X' symbol
-        } else {
-            // If it's visible, hide the menu
-            navMenu.style.display = 'none';
-            hamburger.innerHTML = '&#9776;'; // Change back to hamburger symbol
-        }
-    });
+    // // Set up the event listener for the hamburger menu button
+    // hamburger.addEventListener('click', function() {
+    //     // Check if the menu is currently visible or not
+    //     if (navMenu.style.display === 'none' || navMenu.style.display === '') {
+    //         // If it's hidden, display the menu
+    //         navMenu.style.display = 'block';
+    //         hamburger.innerHTML = '&#10006;'; // Change to 'X' symbol
+    //     } else {
+    //         // If it's visible, hide the menu
+    //         navMenu.style.display = 'none';
+    //         hamburger.innerHTML = '&#9776;'; // Change back to hamburger symbol
+    //     }
+    // });
 });

@@ -49,6 +49,11 @@ header h1 {
     padding: 10px;
 }
 
+#navMenu:hover {
+    display: block;
+    opacity: 1; /* Ensure it appears when hovered */
+}
+
 #navMenu ul {
     list-style-type: none;
     padding: 0;
