@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('navMenu');
 
     function handleMenuDisplay() {
-        // Check if the screen width is 640px or greater
+        // Check if the screen width is at least 640px
         if (window.innerWidth >= 640) {
             // Display the menu with flex layout when the screen is wide enough
             navMenu.style.display = 'flex';

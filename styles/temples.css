@@ -43,7 +43,7 @@ header h1 {
     display: none; /* Hide the nav menu by default */
     background-color: var(--secondary-color);
     position: absolute;
-    top: 50px; /* Adjust based on your layout */
+    top: 50px;
     right: 0;
     width: 200px;
     padding: 10px;

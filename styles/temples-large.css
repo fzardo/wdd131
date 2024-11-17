@@ -4,26 +4,26 @@
     }
 
     #navMenu {
-        display: flex; /* Display the nav menu as a flex container */
-        position: static; /* Reset position for larger screens */
-        width: auto; /* Let the nav items take up their natural width */
-        padding: 0; /* Remove extra padding */
+        display: flex;
+        position: static;
+        width: auto;
+        padding: 0;
     }
 
     #navMenu ul {
-        display: flex; /* Arrange the list items in a row */
-        gap: 1em; /* Add space between items */
+        display: flex;
+        gap: 1em;
     }
 
     #navMenu ul li {
-        margin: 0; /* Remove margin between items */
+        margin: 0;
     }
 
     #navMenu ul li a {
         color: var(--tertiary-color);
         text-decoration: none;
         font-family: var(--font-family);
-        padding: 0.5em 1em; /* Add padding for the links */
+        padding: 0.5em 1em;
     }
     
     /* Header adjustments */
