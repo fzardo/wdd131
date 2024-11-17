@@ -64,7 +64,7 @@ header h1 {
     font-family: var(--font-family);
 }
 
-#navMenu ul li a:hover {
+a:hover {
     color: var(--primary-color);
 }
 
