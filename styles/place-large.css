@@ -37,7 +37,7 @@
     
     .weather {
         justify-content: right;
-        justify-content:baseline;
+        justify-content: baseline;
         grid-template: auto 1fr / auto auto;
     }
 
@@ -46,7 +46,9 @@
     }
 
     .weather img {
+        align-content: center;
         max-width: 100px;
         max-height: auto;
+        margin: auto;
     }
 }
