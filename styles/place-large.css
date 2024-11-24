@@ -1,13 +1,14 @@
 @media screen and (min-width: 701px) {
     body {
-        grid-template: auto 1fr auto / 1fr;
+        grid-template: auto 1fr auto / auto;
+        justify-content: center;
     }
 
     main {
         display: grid;
         grid-template-columns: 1fr 1fr; /* Three equal columns */
         grid-template-rows: 1fr;
-        background: url('../images/adansonia.webp'); /* Background image */
+        background: url('../images/adansonia.webp') no-repeat;
         position: relative;
     }
 
@@ -37,18 +38,19 @@
     
     .weather {
         justify-content: right;
-        justify-content: baseline;
-        grid-template: auto 1fr / auto auto;
+        align-items: baseline;
+    }
+
+    .weather h2 {
+        grid-column: span 2;
     }
 
     .weather section {
         padding: 1rem;
     }
 
-    .weather img {
-        align-content: center;
+    .weather source {
         max-width: 100px;
-        max-height: auto;
         margin: auto;
     }
 }

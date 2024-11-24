@@ -31,6 +31,15 @@ header {
     margin-bottom: 20px;
 }
 
+header::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 10px auto 0;
+}
+
 footer {   
     margin-top: 20px;
 }
