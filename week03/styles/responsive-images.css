@@ -1,0 +1,18 @@
+@media screen and (min-width: 1000px) {
+    .hero source {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .hero source {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}

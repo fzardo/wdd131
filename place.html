@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Felipe Zardo Cabral</title>
+    <meta name="description" content="This is the place page made by Felipe Zardo Cabral for 'WDD 131 - Dynamic Web Fundamentals' class">
+    <meta name="author" content="Felipe Zardo Cabral">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>
+        <img src="images/adansonia.webp" alt="Adansonia" width="100%" height="auto">
+        <section class="data">
+            <h2>Data</h2>
+            <section>
+                <div class="label">
+                    <p>Area:</p>
+                    <p>Population:</p>
+                    <p>Capital:</p>
+                    <p>Languages:</p>
+                    <p>Currency:</p>
+                    <p>Time Zone:</p>
+                    <p>Calling Code:</p>
+                    <p>Internet:</p>
+                </div>
+                <div class="value">
+                    <p>587,041sq km</p>
+                    <p>27,691,018</p>
+                    <p>Antananarivo</p>
+                    <p>Malagasy, French</p>
+                    <p>Malagasy Ariary</p>
+                    <p>UTC+3</p>
+                    <p>+261</p>
+                    <p>.mg</p>
+                </div>
+            </section>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/madagascar.jpg" alt="Lemur" width="100%" height="auto">
+            <section>
+                <div class="label">
+                    <p>Temperature:</p>
+                    <p>Condition:</p>
+                    <p>Wind:</p>
+                    <p>Wind Chill:</p>
+                </div>
+                <div class="value">
+                    <p id="temp">Value</p>
+                    <p id="condition">Value</p>
+                    <p id="wind">Value</p>
+                    <p id="windChill">Value</p>
+                </div>
+            </section>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Felipe Zardo Cabral, Brazil.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
