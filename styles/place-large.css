@@ -41,10 +41,6 @@
         align-items: baseline;
     }
 
-    .weather h2 {
-        grid-column: span 2;
-    }
-
     .weather section {
         padding: 1rem;
     }

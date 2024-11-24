@@ -62,7 +62,7 @@ main {
 
 .weather {
     grid-template-rows: auto auto 1fr;
-    justify-content: baseline;
+    align-items: baseline;
 }
 
 h2 {
@@ -96,6 +96,5 @@ img {
 .weather img {
     align-content: center;
     max-width: 100px;
-    max-height: auto;
     margin: auto;
 }
