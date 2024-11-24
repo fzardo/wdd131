@@ -93,7 +93,7 @@ img {
     height: auto;
 }
 
-.weather img {
+.weather img { 
     align-content: center;
     max-width: 100px;
     margin: auto;
