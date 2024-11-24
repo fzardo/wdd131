@@ -37,7 +37,7 @@ footer {
 
 main {
     display: grid;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto auto auto;
     background-color: var(--secondary-color);
     min-height: 100%;
 }
@@ -53,6 +53,7 @@ main {
 
 .weather {
     grid-template-rows: auto auto 1fr;
+    justify-content: baseline;
 }
 
 h2 {
@@ -60,12 +61,12 @@ h2 {
     padding: 1rem;
 }
 
-.data section {
+.data .datadiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.weather section {
+.weather .weatherdiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -81,4 +82,11 @@ h2 {
 img {
     width: 100%;
     height: auto;
+}
+
+.weather img {
+    align-content: center;
+    max-width: 100px;
+    max-height: auto;
+    margin: auto;
 }
