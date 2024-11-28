@@ -1,0 +1,64 @@
+@media screen and (min-width: 640px) {
+    #navMenu {
+        display: flex;
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+
+    #navMenu ul {
+        display: flex;
+        gap: 1em;
+    }
+
+    #navMenu ul li {
+        margin: 0;
+    }
+
+    #hamburger {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+
+    /* Hover to show menu on large screens */
+    header:hover #navMenu {
+        display: flex; /* Display the menu when hovering over the header */
+    }
+
+    #navMenu ul li a {
+        color: var(--tertiary-color);
+        text-decoration: none;
+        font-family: var(--font-family);
+        padding: 0.5em 1em;
+    }
+    
+    /* Header adjustments */
+    header h1 {
+        font-size: 2em;
+    }
+
+    /* Main content */
+    main {
+        max-width: 1200px;
+    }
+
+    /* Grid layout for larger views */
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 2em;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    /* Footer adjustments */
+    footer p {
+        margin: 0.5em 0;
+    }
+}
