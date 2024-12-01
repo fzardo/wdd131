@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Display the menu with flex layout when the screen is wide enough
             navMenu.style.display = 'flex';
             hamburger.style.display = 'none'; // Hide the hamburger button
-        } else {
+        }
+        else {
             // Show hamburger menu when the screen is smaller than 640px
             navMenu.style.display = 'none'; // Hide the nav menu initially
             hamburger.style.display = 'block'; // Show the hamburger button
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             // Hide nav menu when mouse leaves the hamburger button
-            hamburger.addEventListener('mouseleave', function() {
+            navMenu.addEventListener('mouseleave', function() {
                 navMenu.style.display = 'none'; // Hide nav menu
             });
         }
@@ -97,6 +98,30 @@ const temples = [
       area: 116642,
       imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
+    {
+      templeName: "Columbia South Carolina",
+      location: "Columbia, South Carolina",
+      dedicated: "1999, October, 16–17",
+      area: 10700,
+      imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/columbia-south-carolina/400x250/columbia-temple-768161-wallpaper.jpg"
+    },
+    {
+      templeName: "San Antonio, Texas",
+      location: "San Antonio, Texas",
+      dedicated: "2005, May, 22",
+      area: 16800,
+      imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-antonio-texas/400x250/san-antonio-texas-lds-temple-1163255-wallpaper.jpg"
+    },
+    {
+      templeName: "Quetzaltenango, Guatemala",
+      location: "Quetzaltenango, Guatemala",
+      dedicated: "2011, December, 11",
+      area: 21085,
+      imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/quetzaltenango-guatemala/400x250/quetzaltenango-guatemala-temple-lds-893073-wallpaper.jpg"
     }
 ];
   

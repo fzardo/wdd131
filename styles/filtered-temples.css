@@ -41,12 +41,13 @@ header h1 {
 
 #navMenu {
     display: none; /* Hide the nav menu by default */
-    background-color: var(--secondary-color);
     position: absolute;
+    background-color: var(--secondary-color);
     top: 50px;
     right: 0;
     width: 200px;
     padding: 10px;
+    z-index: 1;
 }
 
 #navMenu ul {
