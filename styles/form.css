@@ -39,4 +39,5 @@ form input, form select, form textarea {
 fieldset {
     border: none;
     margin-bottom: 15px;
+    text-align: center;
 }
