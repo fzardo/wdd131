@@ -1,5 +1,8 @@
+:root {
+    --font-family: "Spline Sans", sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
@@ -15,7 +18,7 @@ header, footer {
 
 main {
     max-width: 600px;
-    margin: 20px auto;
+    margin: auto;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
@@ -28,16 +31,18 @@ form label {
     font-weight: bold;
 }
 
-form input, form select, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+fieldset {
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
 }
 
-fieldset {
-    border: none;
-    margin-bottom: 15px;
+input[type=date], fieldset select, fieldset textarea {
+    min-width: 97%;
+    align-items: center;
+    padding: 8px;
+    margin: 10px 0 5px;
+}
+
+.review {
     text-align: center;
 }

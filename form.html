@@ -21,11 +21,13 @@
     <main>
         <form action="review.html" method="get">
             <!-- Product Name -->
-            <label for="product">Product Name:</label>
-            <select id="product" name="product" required>
-                <option value="" disabled selected>Select a Product ...</option>
-                <!-- Options will be dynamically populated -->
-            </select>
+            <fieldset>
+                <label for="product">Product Name:</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <!-- Options will be dynamically populated -->
+                </select>
+            </fieldset>
             
             <!-- Overall Rating -->
             <fieldset>
@@ -38,8 +40,10 @@
             </fieldset>
             
             <!-- Date of Installation -->
-            <label for="installationDate">Date of Installation:</label>
-            <input type="date" id="installationDate" name="installationDate" required>
+            <fieldset>
+                <label for="installationDate">Date of Installation:</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </fieldset>
             
             <!-- Useful Features -->
             <fieldset>
@@ -51,12 +55,16 @@
             </fieldset>
             
             <!-- Written Review -->
-            <label for="review">Written Review:</label>
-            <textarea id="review" name="review" rows="5" cols="30"></textarea>
+            <fieldset>
+                <label for="review">Written Review:</label>
+                <textarea id="review" name="review" rows="5" cols="30"></textarea>
+            </fieldset>
             
             <!-- User Name -->
-            <label for="username">User Name:</label>
-            <input type="text" id="username" name="username">
+            <fieldset>
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username">
+            </fieldset>
             
             <!-- Submit Button -->
             <input type="submit" value="Finish">
