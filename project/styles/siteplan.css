@@ -1,0 +1,76 @@
+:root {
+    --primary-color: yellow;
+    --secondary-color: red;
+    --tertiary-color: #68b9fc;
+    --quaternary-color: black;
+}
+
+.color-box.quaternary {
+    background-color: var(--quaternary-color);
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--tertiary-color);
+}
+
+main p {
+    color: var(--quaternary-color);
+}
+
+header {
+    background-color: var(--quaternary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2 {
+    background-image: linear-gradient(yellow, red);
+    color: transparent;
+    background-clip: text;
+    margin: 0.5rem 0;
+    font-family: "Trade Winds", system-ui;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* Color Schema Section */
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid  var(--quaternary-color);
+    margin-right: 5px;
+}
+
+.color-box.primary {
+    background-color: var(--primary-color);
+}
+
+.color-box.secondary {
+    background-color: var(--secondary-color);
+}
+
+/* Wireframes */
+.wireframe {
+    max-width: 100%;
+    margin: 1rem 0;
+    border: 1px solid var(--tertiary-color);
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    background-image: linear-gradient(yellow, red);
+    color: transparent;
+    background-clip: text;
+}
