@@ -1,0 +1,28 @@
+@media screen and (max-width: 402px) {
+    #hamburger {
+        font-size: 1.5em;
+        background: none;
+        border: none;
+        color: var(--tertiary-color);
+        cursor: pointer;
+        display: block;
+    }
+    
+    #navMenu {
+        display: none; /* Hide the nav menu by default */
+        position: absolute;
+        background-color: var(--quaternary-color);
+        top: 50px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .featured-card img {
+        max-width: 200px;
+        height: auto;   
+        border-radius: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+}

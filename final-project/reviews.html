@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Gaming for Casuals</title>
+    <meta name="description" content="This is the reviews page for the final project page made by Felipe Zardo Cabral for 'WDD 131 - Dynamic Web Fundamentals' class">
+    <meta name="author" content="Felipe Zardo Cabral">
+    <link rel="stylesheet" href="styles/base-desktop.css">
+    <link rel="stylesheet" href="styles/base-mobile.css">
+    <link rel="shortcut icon" href="reviews.html">
+    
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/reviews.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Gaming for Casuals</h1>
+        <audio id="backgroundMusic" src="audio/roy-knox-your-poison-ncs-release.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+        <button id="playPauseButton" aria-label="Playing">
+            <img src="images/sound-on.svg" alt="Playing">
+        </button>
+        <button id="hamburger">&#9776;</button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="home.html" id="homeLink">Home</a></li>
+                <li><a href="reviews.html" id="gameReviewsLink">Game Reviews</a></li>
+                <li><a href="tips.html" id="tipsLink">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="game-reviews">
+            <h2>Game Reviews</h2>
+            <section class="reviews-container">
+                <div class="review-card"></div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Gaming for Casuals.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
